@@ -25,9 +25,9 @@ echo "
 
      ErrorLog ${APACHE_LOG_DIR}/error.log
      CustomLog ${APACHE_LOG_DIR}/access.log combined
-</VirtualHost>" >> &{synfony_conf_file}
+</VirtualHost>" >> ${synfony_conf_file}
 
-echo "emplacement du fichier de conf de synfony pour apache : &{synfony_conf_file}";
+echo "emplacement du fichier de conf de synfony pour apache : ${synfony_conf_file}";
 
 a2ensite symfony.conf
 systemctl restart apache2.service
