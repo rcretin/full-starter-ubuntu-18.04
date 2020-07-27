@@ -1,1 +1,1 @@
-apt update && apt full-upgrade && apt auto-remove
+apt update && apt full-upgrade
