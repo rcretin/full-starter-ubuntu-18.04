@@ -5,10 +5,10 @@ curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/loca
 cd /var/www/
 composer create-project symfony/skeleton symfony5
 
-chown -R www-data:www-data ./var/www/symfony5/
-chmod -R 755 ./var/www/symfony5/
+chown -R www-data:www-data /var/www/symfony5/
+chmod -R 755 /var/www/symfony5/
 
-synfony_conf_file="./etc/apache2/sites-available/symfony.conf"
+synfony_conf_file="/etc/apache2/sites-available/symfony.conf"
 
 echo "
 <VirtualHost *:80>
