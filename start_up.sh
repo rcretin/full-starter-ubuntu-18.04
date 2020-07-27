@@ -1,1 +1,1 @@
-apt update && apt full-upgrade
+apt update && apt -y full-upgrade
