@@ -3,4 +3,5 @@ apt_sources_liste="/etc/apt/sources.list"
 echo "deb http://download.webmin.com/download/repository sarge contrib" >> ${apt_sources_liste}
 
 apt update
-apt install -y apache2 php webmin
+apt install -y apache2 php libapache2-mod-php webmin
+apt install -y php-curl php-gd php-intl php-json php-mbstring php-xml php-zip
